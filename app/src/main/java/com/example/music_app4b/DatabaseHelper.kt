@@ -98,7 +98,7 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(
 
         val query_sql = """
             
-            SELECT * FROM TABLE_USUARIOS
+            SELECT * FROM $TABLE_USUARIOS
             WHERE $COL_EMAIL = ? AND $COL_PASS = ?
             
         """.trimIndent()
